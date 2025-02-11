@@ -12,9 +12,10 @@ app.get('/shout', (req, res) => {
   res.send(uppercasename);
 });
 
+
 app.get('/fullname',(req,res)=>{let fname=req.query.fname; let lname = req.query.lname; res.send(fname+lname)});
 
-app.get('/date',(req,res)=>{let month=req.query.month;let year =req.query.year; res.send(month+', '+year)});
+// app.get('/date',(req,res)=>{let month=req.query.month;let year =req.query.year; res.send(month+', '+year)});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
